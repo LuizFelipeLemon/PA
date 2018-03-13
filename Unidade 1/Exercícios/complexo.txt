@@ -1,0 +1,13 @@
+Exercício - funções e struct's para números complexos
+
+1) Usando uma struct, defina o tipo "Complexo", capaz de representar um número complexo com parte real (double) e imaginária (double)
+
+2) Crie funções "ler" e "imprimir" para entrada/saída de números complexos. Use o tipo "Complexo".
+
+3) Crie funções "soma" e "produto" para realizar essas operações matemáticas com números complexos. Use o tipo "Complexo".
+
+4) Usando as funcionalidades desenvolvidas nos itens anteriores, faça um programa principal que:
+- Crie quatro variáveis, C1, C2, S e P, representando números complexos.
+- Solicite que o usuário digite valores para C1 e C2.
+- Calcule as variáveis S = C1+C2 e P = C1*C2.
+- Imprima os valores de S e P. 

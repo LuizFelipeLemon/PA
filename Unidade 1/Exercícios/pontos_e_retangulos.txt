@@ -1,0 +1,18 @@
+Exercícios - funções e struct's em C++
+
+1) Defina o tipo "Ponto", capaz de representar um ponto em coordenadas cartesianas
+
+2) Crie uma função "imprimirPonto", capaz de imprimir um ponto na tela. Use o tipo "Ponto".
+
+3) Forneça uma implementação para uma função "distPontos" que calcula a distância Euclidiana entre dois pontos.  Use o tipo "Ponto".
+
+4) Forneça uma implementação da função "pontosIguais" que retorna true ou false de acordo com o fato de dois pontos serem iguais ou não. Use o tipo "Ponto". DICA: com valores em ponto flutuante, nunca faz muito sentido testar a igualdade absoluta entre dois valores; ao invés disso, teste se a distância entre os dois pontos é menor que 0.000001, usando a função "distPontos".
+
+5) Defina um tipo "Retangulo" para representar retângulos que são paralelos aos eixos no sistema de coordenadas cartesianas. Represente um retângulo pelos seus pontos superior direito (ponto de coordenadas máximas) e inferior esquerdo (coordenadas mínimas)
+
+6) Escreva a função "areaRet" que calcula a área de um retângulo.  Use o tipo "Retangulo".
+
+7) Escreva uma função "pontoDentroRet" que retorna o resultado do teste (true ou false) sobre se um ponto está dentro de um retângulo. Use os tipos "Ponto" e "Retangulo".
+
+8) Escreva a função "retDentroRet" que retorna true se o primeiro retângulo está dentro do segundo. DICA: basta testar se os pontos limites do primeiro retângulo estão dentro do segundo, usando a função "pontoDentroRet".
+
