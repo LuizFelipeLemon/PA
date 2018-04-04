@@ -18,6 +18,7 @@ public:
     
     friend istream &operator>>(istream &put, Voo &voo);
     friend ostream &operator<<(ostream &print, const Voo &voo);
+    
 
 
     inline unsigned getNumero() const {return numero;}

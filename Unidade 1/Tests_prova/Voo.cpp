@@ -20,7 +20,6 @@ void copy(char c1[],char c2[]){
 istream &operator>>(istream &put, Voo &voo){
     
     unsigned int _numero,_departure,_arrival;
-
     do{
         cout<<"Digite um número para o voo\n";
         put>>_numero;
