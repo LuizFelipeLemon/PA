@@ -1,15 +1,16 @@
 LISTALivro 4
-L: "Memorial";$32;"Pedro"
+L: "Memorial";$32.34;"Pedro"
 L: "Minha Vida";$2.86;"Adolfo"
 L: "Poemas";$13.14;"João de Sá"
-L: "Luiz e gay";$12.87;"Bianor"
+L: "Livro 4";$12.56;"Luiz FElipe santana"
 
 LISTACD 2
 C: "Solidão";$27.86;12
 C: "Verso Azul";$8.52;14
 
-LISTADVD 3
+LISTADVD 4
 D: "Combate VI";$14.38;126
 D: "Barroco";$8.52;72
-D: "Nunca Mais!";$11.00;185
+D: "Nunca Mais!";$11;185
+D: "Eu, Tu, Eles";$7;134
 

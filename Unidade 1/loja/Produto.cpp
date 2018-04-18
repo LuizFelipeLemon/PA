@@ -10,14 +10,18 @@
 using namespace std;
 
 istream &Produto::digitar(istream &in) {
-  cout << "Digite  o nome do produto:\n";
+  in.ignore();
+  cout << "Digite  o nome do produto: ";
   getline(in, nome);
-  cout << "Digite o preco:\n";
+  cout << "Digite o preco: ";
+
   in >> price;
   price *= 100;
   int temp;
   in.ignore(numeric_limits<streamsize>::max(), '.');
   in >> temp;
+  in.ignore();
+
   price += temp;
 
   return in;
@@ -33,16 +37,9 @@ void Produto::ler(istream &I) {
   // Memorial”;$32.34;”Pedro”
   I.ignore(numeric_limits<streamsize>::max(), '"');
   getline(I, nome, '"');
-  I.ignore(numeric_limits<streamsize>::max(), ';');
+  // I.ignore(numeric_limits<streamsize>::max(), ';');
   I.ignore(numeric_limits<streamsize>::max(), '$');
-
-  I >> price;
-  price *= 100;
-  int temp;
-  I.ignore(numeric_limits<streamsize>::max(), '.');
+  float temp;
   I >> temp;
-  price += temp;
-
-  cout << "COnferindo...\n";
-  cout << *this;
+  price = temp * 100;
 }

@@ -12,18 +12,23 @@ using namespace std;
 
 istream &Livro::digitar(istream &I) {
   Produto::digitar(I);
+  cout << "Digite o nome do autor: ";
+  // I.ignore();
 
-  I.ignore(numeric_limits<streamsize>::max(), '"');
-
-  getline(I, autor, '"');
+  getline(I, autor);
 
   return I;
 }
 
 ostream &Livro::imprimir(ostream &O) const {
+  O << "L: ";
   Produto::imprimir(O);
   O << '"' << autor << '"' << endl;
   return O;
 }
 
-void ler(istream &I) { Produto::ler(I); }
+void Livro::ler(istream &I) {
+  Produto::ler(I);
+  I.ignore(numeric_limits<streamsize>::max(), '"');
+  getline(I, autor, '"');
+}

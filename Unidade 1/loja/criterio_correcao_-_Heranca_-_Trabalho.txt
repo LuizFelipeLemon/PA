@@ -1,0 +1,42 @@
+Objetivo da avalia��o:
+
+- Demonstrar conhecimento dos conceitos fundamentais de POO usando heran�a entre classes em C++
+
+Conceitos fundamentais:
+
+Heran�a:
+- Constru��o incremental de objetos: utiliza corretamente composi��o e heran�a
+- Utiliza corretamente dados e heran�a p�blica e privada
+- Define os construtores da classe derivada em termos dos construtores da classe base
+- Utiliza corretamente os dados e m�todos da classe base na constru��o dos m�todos da classe derivada
+- N�o duplica dados da classe base na classe derivada
+- N�o reproduz c�digo dos m�todos da classe base na classe derivada
+
+NOTAS:
+- Todos os conceitos: >= 7
+- Maior parte dos conceitos : 5-6,9
+- Poucos conceitos: 3-4,9
+- Nenhum conceito: < 3
+
+Erros graves:
+- Utiliza��o de classes independentes (n�o usou heran�a): -10pt (todos)
+- N�o utilizou classes (definiu todos os dados em vari�veis isoladas): -10pt (todos)
+- Tornou p�blicos dados que poderiam ser privados: -3pt
+- Tornou protegidos dados que poderiam ser privados: -2pt
+
+Erros menos graves:
+- Passou par�metro por c�pia, quando deveria ser por refer�ncia: -1pt
+- N�o checou validade de par�metro de entrada de fun��o/m�todo: -0,5pt/ocorr�ncia
+- N�o indicou par�metro ou m�todo como sendo const: -0,5/ocorr�ncia
+
+Algoritmos:
+- Inexistente ou incorreto: -1 a -2 pt
+- Incompleto: -0,5 a 1,0 pt
+
+Sintaxe incorreta: -0,5 pt
+Otimiza��o faltante: -0,2 a 0,5 pt
+
+//Método salvar problemático
+//Método ler problemático
+// métodos criar não compilam
+//Código imcompleto

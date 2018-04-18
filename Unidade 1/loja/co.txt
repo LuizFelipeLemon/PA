@@ -1,0 +1,13 @@
+LISTALIVRO 2
+L: "Harry Potter e a Pedra Filosofal";$38;"J K Rowling"
+L: "O Hobbit";$42.15;"J R R Tolkien"
+LISTACD 4
+C: "Bad";$11.36;15
+C: "The Bodyguard";$21;17
+C: "Musicas para Louvar";$13.16;15
+C: "Xou da Xuxa";$27;11
+LISTADVD 3
+D: "Sai do chao";$23.98;127
+D: "Galinha Pintadinha";$10.15;92
+D: "Ao vivo";$20.17;102
+

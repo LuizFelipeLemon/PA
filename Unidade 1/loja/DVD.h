@@ -1,5 +1,5 @@
-#ifndef CLASSE_DO_LUIZ_PARA_UMA_LIVRO
-#define CLASSE_DO_LUIZ_PARA_UMA_LIVRO
+#ifndef CLASSE_DO_LUIZ_PARA_UMA_DVD
+#define CLASSE_DO_LUIZ_PARA_UMA_DVD
 
 #include <fstream>
 #include <iostream>
@@ -8,9 +8,9 @@
 
 using namespace std;
 
-class Livro : public Produto {
+class DVD : public Produto {
  public:
-  inline Livro() : Produto(), autor("") {}
+  inline DVD() : Produto(), dur(0) {}
 
   istream &digitar(istream &in);
   ostream &imprimir(ostream &out) const;
@@ -20,9 +20,10 @@ class Livro : public Produto {
 
  private:
   string autor;
+  int dur;
 };
 
-inline istream &operator>>(istream &I, Livro &L) { return L.digitar(I); }
-inline ostream &operator<<(ostream &O, Livro &L) { return L.imprimir(O); }
+inline istream &operator>>(istream &I, DVD &C) { return C.digitar(I); }
+inline ostream &operator<<(ostream &O, DVD &C) { return C.imprimir(O); }
 
 #endif  // !CLASSE_DO_LUIZ_PARA_UMA_LOJA

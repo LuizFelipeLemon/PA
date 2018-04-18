@@ -15,13 +15,6 @@ class Produto {
   istream &digitar(istream &in);
   ostream &imprimir(ostream &out) const;
 
-  inline friend istream &operator>>(istream &I, Produto &X) {
-    return X.digitar(I);
-  }
-  inline friend ostream &operator<<(ostream &O, Produto &X) {
-    return X.imprimir(O);
-  }
-
   void ler(istream &I);
   inline ostream &salvar(ostream &O) const { return imprimir(O); }
 
@@ -29,5 +22,8 @@ class Produto {
   string nome;
   int price;
 };
+
+inline istream &operator>>(istream &I, Produto &X) { return X.digitar(I); }
+inline ostream &operator<<(ostream &O, Produto &X) { return X.imprimir(O); }
 
 #endif  // !CLASSE_DO_LUIZ_PARA_UMA_LOJA
