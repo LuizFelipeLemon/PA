@@ -1,0 +1,11 @@
+O aplicativo Sudoku foi implementado em duas versões:
+- Uma não formatada, que roda em qualquer ambiente.
+- Uma formatada, que executa apenas no Windows versão 10.
+Existem dois arquivos de projeto Code Blocks para essas duas versões.
+
+Para reduzir ao mínimo a duplicação de código, todas as funções que fazem impressão de dados em tela foram concentradas em um único arquivo. Portanto, para compilar uma versão ou outra, basta substituir um arquivo:
+- sudoku_form_none.cpp - não formatada
+- sudoku_form_win10.cpp - formatação para Windows 10
+Para a versão formatada, também é utilizada uma biblioteca de funções para controle do terminal. Essa biblioteca está nos arquivos console.h e console.cpp. Na versão não formatada, esses arquivos não são utilizados.
+
+A mesma metodologia pode ser adotada caso se deseje fazer uma versão do aplicativo usando programação visual (em Qt, por exemplo): basta criar uma versão sudoku_form_Qt.cpp
