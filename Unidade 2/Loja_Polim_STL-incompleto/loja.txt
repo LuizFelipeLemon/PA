@@ -1,0 +1,5 @@
+LOJA 4
+L: "O Nome da Rosa";$43.15;"Umberto Eco"
+C: "Les Plus Belles Chansons";$12;17
+D: "Senhor dos Aneis XIX";$98.65;129
+L: "Ameaca Mortal";$32.95;"Tom Clancy"

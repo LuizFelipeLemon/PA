@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luiz/Documents/Projects/PA/Unidade 2/Circuito/bool3S.cpp
+iostream
+-
+bool3S.h
+/home/luiz/Documents/Projects/PA/Unidade 2/Circuito/bool3S.h
+
+/home/luiz/Documents/Projects/PA/Unidade 2/Circuito/bool3S.h
+iostream
+-
+
+/home/luiz/Documents/Projects/PA/Unidade 2/Circuito/circuito.h
+iostream
+-
+string
+-
+vector
+-
+bool3S.h
+/home/luiz/Documents/Projects/PA/Unidade 2/Circuito/bool3S.h
+
+/home/luiz/Documents/Projects/PA/Unidade 2/Circuito/main.cpp
+iostream
+-
+string
+-
+circuito.h
+/home/luiz/Documents/Projects/PA/Unidade 2/Circuito/circuito.h
+

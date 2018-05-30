@@ -1,0 +1,3 @@
+/home/luiz/Documents/Projects/PA/Unidade 2/Circuito/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/luiz/Documents/Projects/PA/Unidade 2/Circuito/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/luiz/Documents/Projects/PA/Unidade 2/Circuito/cmake-build-debug/CMakeFiles/Circuito.dir

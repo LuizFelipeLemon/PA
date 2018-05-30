@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Circuito.dir/main.cpp.o CMakeFiles/Circuito.dir/bool3S.cpp.o CMakeFiles/Circuito.dir/circuito.cpp.o  -o Circuito 
