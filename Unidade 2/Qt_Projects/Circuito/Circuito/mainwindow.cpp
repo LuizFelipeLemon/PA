@@ -3,6 +3,11 @@
 #include "novo_circuito.h"
 #include "circuito.h"
 
+#include <QFileDialog>
+#include <QFile>
+#include <QMessageBox>
+#include <QTextStream>
+
 extern Circuito C;
 
 
@@ -44,6 +49,46 @@ void MainWindow::on_actionNovo_triggered()
 }
 
 void MainWindow::on_actionNovo_changed()
+{
+
+}
+
+void MainWindow::on_actionLer_triggered()
+{
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Open File"), tr("Text Files (*.txt);;C++ Files (*.cpp *.h)"));
+    if (!fileName.isEmpty()) {
+        QFile file(fileName);
+        if (!file.open(QIODevice::ReadOnly)) {
+            QMessageBox::critical(this, tr("Error"), tr("Could not open file"));
+            return;
+        }
+        QTextStream in(&file);
+        //ui->textEdit->setText(in.readAll());
+        file.close();
+    }
+}
+
+void MainWindow::on_actionSalvar_triggered()
+{
+    QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"),
+    tr("Text Files (*.txt);;C++ Files (*.cpp *.h)"));
+    if (!fileName.isEmpty()) {
+        QFile file(fileName);
+        if (!file.open(QIODevice::WriteOnly)) {
+            // error message
+        } else {
+            QTextStream stream(&file);
+            //stream << ui->textEdit->toPlainText();
+            stream.flush();
+            file.close();
+        }
+    }
+
+}
+
+
+
+void MainWindow::on_actionSair_triggered()
 {
 
 }

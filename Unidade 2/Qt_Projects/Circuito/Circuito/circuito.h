@@ -103,7 +103,7 @@ public:
 
   void digitar();
   bool ler(istream &I);
-  void imprimir(ostream &O) const;
+  void imprimir() const;
 
   bool3S simular(const bool3S in[]);
 };

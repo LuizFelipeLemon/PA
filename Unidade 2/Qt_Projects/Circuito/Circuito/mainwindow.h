@@ -26,6 +26,12 @@ private slots:
 
     void on_actionNovo_triggered();
 
+    void on_actionLer_triggered();
+
+    void on_actionSair_triggered();
+
+    void on_actionSalvar_triggered();
+
 private:
     Ui::MainWindow *ui;
     Novo_circuito novo_circuito;

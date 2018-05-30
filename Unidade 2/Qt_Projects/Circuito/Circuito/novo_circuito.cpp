@@ -22,6 +22,13 @@ Novo_circuito::~Novo_circuito()
 
 void Novo_circuito::on_buttonBox_accepted()
 {
+    unsigned NI = ui->spinBox->value();
+    unsigned NO = ui->spinBox_2->value();
+    unsigned NP = ui->spinBox_3->value();
+
+
+
+
     C.limpar();
-    //C.set
+    C.redimensionar(NI,NO,NP);
 }
